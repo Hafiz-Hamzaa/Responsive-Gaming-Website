@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #1f242d;
+}
+.navbar{
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.logo:hover{
+    color: #7cf03d;
+}
+span{
+    font-weight: 700;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+#sp{
+    color: #7cf03d;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding-right: 12px;
+}
+.links a:hover{
+    color: #7cf03d;
+}
+.search{
+    font-size: 1rem;
+    color: white;
+    background-color: #1f242d;
+    border: 3px solid #7cf03d;
+    height: 30px;
+    width: 120px;
+    border-radius: 15px;
+    margin-right: 3%;
+}
+.search:hover{
+    border: 2px solid white;
+}
+
+/* navbar responsive */
+@media screen and (max-width:735px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+    }
+    .search{
+        margin-top: 2%;
+    }
+    .links{
+        margin-top: 2%;
+    }
+}
+@media screen and (min-width:280px) and (max-width:375px) {
+    .links a{
+        font-size: 1rem;
+    }
+}
+
+/* hero section */
+.hero-section{
+    margin-top: 25px;
+    border-radius: 0px;
+    background-image: url(https://img.freepik.com/premium-vector/futuristic-green-black-gaming-header-social-media-banner-template_136469-1574.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+    height: 460px;
+    border-radius: 25px;
+    border: 3px solid #7cf03d;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.hero-section:hover{
+    border: 3px solid white;
+}
+
+/* responsive banner */
+@media screen and (min-width:400px) and (max-width:738px) {
+    .hero-section{
+        margin-top:40px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width:280px) and (max-width:560px) {
+    .hero-section{
+        height: 200px;
+    }
+}
+
+/* popular section */
+
+.text{
+    color: white;
+    font-size: 2rem;
+    margin-left: 2%;
+    margin-top: 30px;
+}
+.grn{
+    color: #7cf03d;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.box{
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+    border: 5px solid #851d7f;
+}
+#one{
+    background-image: url(https://img.freepik.com/premium-photo/digital-intrigue-steal-private-data-device-scamming-by-hackers-disguised-as-fake-call-centers_64478-2364.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+#two{
+    background-image: url(https://img.freepik.com/premium-photo/vr-headset-charging-stand-immersive-gaming-experience_38013-69434.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+#three{
+    background-image: url(https://img.freepik.com/free-photo/view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529367.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+#four{
+    background-image: url(https://img.freepik.com/premium-photo/group-people-with-virtual-reality-glasses-their-heads-are-working-computers_956369-14033.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrids);
+    background-size: cover;
+}
+#five{
+    background-image: url(https://img.freepik.com/free-photo/view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529403.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrids);
+    background-size: cover;
+}
+#six{
+    background-image: url(https://img.freepik.com/free-photo/futuristic-city-with-high-tech-mobility-social-welfare_23-2151065447.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+#seven{
+    background-image: url(https://img.freepik.com/premium-photo/gaming-joystick-black-background-neon-light_1009902-150957.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+#eight{
+    background-image: url(https://img.freepik.com/free-photo/cool-gaming-setup-inside-still-life_23-2149829152.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+
+/* popular-responsive */
+@media screen and (min-width:360px) and (max-width:375px) {
+    .text{
+        font-size: 1.75rem;
+    }
+    .box{
+        width: 320px;
+        height: 280px;
+    }
+}
+
+/* special section */
+.sp-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#nine{
+    background-image: url(https://img.freepik.com/premium-photo/ultimate-gaming-setup-black-friday-super-sale_976564-35890.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+#ten{
+    background-image: url(https://img.freepik.com/free-photo/cyber-monday-celebration_23-2151835519.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+#eleven{
+    background-image: url(https://img.freepik.com/premium-photo/gaming-gadgets-hightech-showroom_1130336-1680.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+
+/* special-responsive */
+@media screen and (min-width:360px) and (max-width:375px) {
+    .text{
+        font-size: 1.75rem;
+    }
+    .box{
+        width: 320px;
+        height: 280px;
+    }
+}
+
+/* library section */
+
+.library-container{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    width: 160px;
+    height: 120px;
+    border-radius: 18px;
+    border: 3px solid #7cf03d;
+}
+#item-one{
+    background-image: url(https://img.freepik.com/premium-photo/video-game-controller-with-colorful-design-bottom_951133-9298.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+h3{
+    color: white;
+}
+.click{
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #1f242d;
+    color: white;
+    border:  3px solid #7cf03d;
+}
+#lib-txt{
+    text-align: center;
+}
+
+/* library section */
+
+.library-container{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    width: 160px;
+    height: 120px;
+    border-radius: 18px;
+    border: 3px solid #7cf03d;
+}
+#item-one{
+    background-image: url(https://img.freepik.com/premium-photo/video-game-controller-with-colorful-design-bottom_951133-9298.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+h3{
+    color: white;
+}
+.click{
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #1f242d;
+    color: white;
+    border:  3px solid #7cf03d;
+}
+#lib-txt{
+    text-align: center;
+}
+
+/* library section */
+
+.library-container{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    width: 160px;
+    height: 120px;
+    border-radius: 18px;
+    border: 3px solid #7cf03d;
+}
+#item-one{
+    background-image: url(https://img.freepik.com/premium-photo/video-game-controller-with-colorful-design-bottom_951133-9298.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+h3{
+    color: white;
+}
+.click{
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #1f242d;
+    color: white;
+    border:  3px solid #7cf03d;
+}
+#lib-txt{
+    text-align: center;
+}
+
+/* library section */
+
+.library-container{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    width: 160px;
+    height: 120px;
+    border-radius: 18px;
+    border: 3px solid #7cf03d;
+}
+#item-one{
+    background-image: url(https://img.freepik.com/premium-photo/video-game-controller-with-colorful-design-bottom_951133-9298.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
+    background-size: cover;
+}
+h3{
+    color: white;
+}
+.click{
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #1f242d;
+    color: white;
+    border:  3px solid #7cf03d;
+}
+#lib-txt{
+    text-align: center;
+}
+
+
+/* libraray responsive */
+@media screen and (max-width:850px) {
+    .library-container{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .item{
+        width: 140px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    .click{
+        margin-top: 20px;
+    }
+    h3{
+        margin-top: 20px;
+    }
+}
+
+
+/* footer */
+footer{
+    margin-top: 25px;
+    border-top: 2px solid #7cf03d;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding-top: 15px;
+}
+
+/* footer responsive */
+
+@media screen and (ma-width:300px) and (max-width:500px) {
+    footer{
+        font-size: 0.85rem;
+    }
+}
