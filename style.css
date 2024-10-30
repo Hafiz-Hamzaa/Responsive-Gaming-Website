@@ -128,6 +128,10 @@ span{
     width: 350px;
     height: 300px;
     border: 5px solid #851d7f;
+    transition: 1s;
+}
+.box:hover{
+    transform: scale(1.075);
 }
 #one{
     background-image: url(https://img.freepik.com/premium-photo/digital-intrigue-steal-private-data-device-scamming-by-hackers-disguised-as-fake-call-centers_64478-2364.jpg?ga=GA1.1.904921068.1702209666&semt=ais_hybrid);
